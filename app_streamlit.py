@@ -31,7 +31,7 @@ else:
     st.warning(f"ERD diagram not found at {erd_path}")
 
 # User question input
-question = st.text_input(label="**<p style='font-size: 20px;'>Enter your question:</p>**")
+question = st.text_input(label="**<p style='font-size: 40px;'>Enter your question:</p>**")
 if st.button("Ask"):
     if question.strip():
         with st.spinner("Thinking..."):
@@ -43,4 +43,5 @@ if st.button("Ask"):
                 st.error(f"Error: {e}")
     else:
         st.warning("Please enter a question.")
+
 
