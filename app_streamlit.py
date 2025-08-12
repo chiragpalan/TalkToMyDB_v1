@@ -16,7 +16,6 @@ You can type your own questions or try some of these examples:
 
 - "Show me all actors in the database"
 - "List the top 5 films by rental count"
-- "Give me the total payments per customer"
 
 💡 *Tip:* The AI will translate your question into SQL and fetch the results directly from the database.
 """)
@@ -42,6 +41,7 @@ if st.button("Ask"):
                 st.error(f"Error: {e}")
     else:
         st.warning("Please enter a question.")
+
 
 
 
